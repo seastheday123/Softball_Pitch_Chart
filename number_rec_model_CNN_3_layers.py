@@ -132,6 +132,6 @@ pass
 #Take all model data and combine it for dataframe convertion
 graph_data_df = list(zip(data_channels,data_epoch,data_loss,data_accuracy))
 #Create dataframe
-graph_data_df = pd.DataFrame(graph_data_df, columns = ['ChannelSet-Up', 'NumberOfEpochs','Loss','TestAccuracy'])
+graph_data_df = pd.DataFrame(graph_data_df, columns = ['ChannelSetUp', 'NumberOfEpochs','Loss','TestAccuracy'])
 #export dataframe to excel
 graph_data_df.to_excel("model_graph_data_test.xlsx")
